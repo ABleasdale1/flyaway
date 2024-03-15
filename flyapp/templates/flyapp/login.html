@@ -1,0 +1,19 @@
+{% include 'flyapp/header.html' %}
+
+<div class="container">
+  <h1>Login</h1>
+  <form method="POST">
+    {% csrf_token %}
+    <label for="username">Username:</label><br>
+    <input type="text" id="username" name="username" placeholder="username">
+    <br>
+    <label for="password">Password:</label><br>
+    <input type="password" id="password" name="password" placeholder="password">  
+    <br><br>
+    <div class="submit-button">
+      <input type="submit" value="Submit">
+    </div>
+  </form>
+</div>
+
+  {% include 'flyapp/footer.html' %}
